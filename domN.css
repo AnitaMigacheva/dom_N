@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic');
+@@import "reset.css";
+
+h1 {
+  color: black;
+}
+
+body {
+  color: rgb(46,46,46);
+  font-family: "PT Sans", sans-serif;
+  background-image: url("/Users/aemigachyova/github/GitHub/html-intro/img/dc-online-media-mockup.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 800px 1000px;
+}
