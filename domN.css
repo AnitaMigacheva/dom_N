@@ -1,15 +1,50 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic');
-@@import "reset.css";
+@import "reset.css";
 
 h1 {
+  font-size: 40px;
   color: black;
 }
 
+h2 {
+  font-size: 30px;
+}
+
 body {
-  color: rgb(46,46,46);
+  color: rgb(46, 46, 46);
   font-family: "PT Sans", sans-serif;
-  background-image: url("/Users/aemigachyova/github/GitHub/html-intro/img/dc-online-media-mockup.jpg");
+  /*background-image: url(img/dc-online-media-mockup.jpg);*/
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: 800px 1000px;
+  background-size: 800px auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40em;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+blockquote {
+  border-left: 2px solid rgb(46, 46, 46);
+  padding-left: 8px;
+  margin-left: 0;
+  font-style: italic;
+}
+
+.arch {
+  list-style-type: disc;
+}
+
+.arch li {
+  padding-top: 10px;: 
+}
+
+ol {
+  list-style: none;
+  counter-reset: section;
+}
+
+li::before {
+  counter-increment: section;
+  content: counters(section,".") " ";
 }
