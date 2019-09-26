@@ -3,41 +3,52 @@
 
 h1 {
   font-size: 40px;
+  font-weight: bold;
   color: black;
 }
 
 h2 {
   font-size: 30px;
   padding-top: 6px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+p {
+  padding-top: 16px;
 }
 
 body {
+  margin-top: 20px;
   color: rgb(46, 46, 46);
   font-family: "PT Sans", sans-serif;
   /*background-image: url(img/dc-online-media-mockup.jpg);*/
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: 800px auto;
+  /* background-position: top center;
+  background-repeat: no-repeat; */
+  /* background-size: 800px auto; */
   margin-left: auto;
   margin-right: auto;
   width: 40em;
   font-size: 18px;
-  line-height: 1.5em;
+  line-height: 1.6em;
 }
 
 blockquote {
+  margin-top: 20px;
+  position: relative;
   border-left: 2px solid rgb(46, 46, 46);
-  padding-left: 8px;
-  margin-left: 0;
+  padding-left: 14px;
+  margin-left: -20px;
+  width: 600px;
   font-style: italic;
 }
-- — — —
+
 .arch {
   list-style-type: disc;
 }
 
 .arch li {
-  padding-top: 10px;:
+  padding-top: 10px;
 }
 
 ol {
@@ -45,7 +56,15 @@ ol {
   counter-reset: section;
 }
 
+.cont {
+  margin-bottom: 20px;
+}
+
 li::before {
   counter-increment: section;
   content: counters(section,".") " ";
+}
+
+ul, ol {
+  padding: 0px 24px;
 }
