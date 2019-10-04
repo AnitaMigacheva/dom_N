@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic");
 @import "reset.css";
 
-
 h1,
 h2,
 h3,
@@ -12,11 +11,11 @@ blockquote {
   margin: 0 auto;
 }
 
-
 h1 {
   font-size: 40px;
   font-weight: bold;
   color: black;
+  margin-top: 20px;
 }
 
 h2 {
@@ -39,7 +38,6 @@ p {
 body {
   -webkit-font-smoothing: antialised;
   -moz-osx-font-smoothing: grayscale;
-  margin-top: 20px;
   color: rgb(46, 46, 46);
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -56,8 +54,8 @@ img {
 blockquote {
   margin-top: 20px;
   border-left: 2px solid rgb(46, 46, 46);
-  padding-left: 16px;
-  margin-left: 40px;
+  margin-left: 214px;
+  padding-left: 14px;
   font-style: italic;
 }
 
@@ -70,6 +68,7 @@ blockquote {
 }
 
 ol {
+  padding-left: 40px;
   list-style: none;
   counter-reset: section;
 }
@@ -79,7 +78,8 @@ a {
 }
 
 a:hover {
-  color: rgb(0, 0, 0);
+  color: rgb(0, 0, 229);
+  text-decoration: none;
 }
 
 .cont {
@@ -89,8 +89,4 @@ a:hover {
 li::before {
   counter-increment: section;
   content: counters(section,".") " ";
-}
-
-ul, ol {
-  padding: 0px 24px;
 }
